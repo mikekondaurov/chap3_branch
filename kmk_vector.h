@@ -37,7 +37,7 @@ public:
                 return Kmk_Iterator<T>(elem + sz);
         }
 
-///     typedef Kmk_Vector<T> iterator;
+
  private:
 //      double* elem; // elem points to an array of sz doubles
          T* elem;
