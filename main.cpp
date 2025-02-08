@@ -1,5 +1,4 @@
 // main.cpp   123
-// serverfix
 
 
 //import Vector; // get Vector's interface
@@ -61,8 +60,6 @@ int main()
  ///       Kmk_Vector<tableEntry>::iterator it;// = symvolTable.begin();
 
 
-//        if (CompareVec<double>(v1, v))  cout << "вектора совпадают";
-
 //        else cout << "no";
     }
     catch (std::length_error& err) {
@@ -72,5 +69,8 @@ int main()
         return 1;
     }
     std::cout << "Привет!\n"; // << sqrt_sum(v);
+
+
+
 
 }
