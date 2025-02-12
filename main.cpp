@@ -24,7 +24,9 @@
 using  namespace std;
 struct tableEntry {
     int symvol;
-    char type; // C-ГЄГ®Г­Г±ГІГ Г­ГІГ  L- Г¬ГҐГІГЄГЁ V - ГЇГҐГ°ГҐГ¬ГҐГ­Г­Г»ГҐ
+
+    char type; // C-константа L- метки V - переменные
+
     int location; // 0-999
 };
 
@@ -32,8 +34,10 @@ int main()
 {
 ///    SetConsoleCP(1251);
 ///    SetConsoleOutputCP(1251);
-    setlocale(LC_ALL, "Russian");  // Г¤Г ГҐГІ Г°ГіГ±Г±ГЄГЁГҐ ГЎГіГЄГўГ» Гў ГЄГ®Г­Г±Г®Г«ГҐ
-    // ГЄГ®Г¤ГЁГ°Г®ГўГЄГ 
+
+    setlocale(LC_ALL, "Russian");  // дает русские буквы в консоле
+    // кодировка
+
 //    Vector<double> v(3.3);//{2.1,2,3};
     try {
 //        Vector<double> v1(3);
@@ -56,13 +60,17 @@ int main()
 
  ///       Kmk_Vector<tableEntry>::iterator it;// = symvolTable.begin();
 
-//        if (CompareVec<double>(v1, v))  cout << "ГўГҐГЄГІГ®Г°Г  Г±Г®ГўГЇГ Г¤Г ГѕГІ";
+
+//        if (CompareVec<double>(v1, v))  cout << "вектора совпадают";
+
 //        else cout << "no";
     }
     catch (std::length_error& err) {
     //    // ... handle negative size ...
-        std::cout << "Г€Г±ГЄГ«ГѕГ·ГҐГ­ГЁГҐ !\n" << err.what() ;
+
+        std::cout << "Исключение !\n" << err.what() ;
         return 1;
     }
-    std::cout << "ГЏГ°ГЁГўГҐГІ!\n"; // << sqrt_sum(v);
+    std::cout << "Привет!\n"; // << sqrt_sum(v);
+
 }
