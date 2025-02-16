@@ -1,9 +1,5 @@
 // main.cpp   123
-<<<<<<< HEAD
 
-=======
-=======
->>>>>>> dbe3695 (main change)
 
 //import Vector; // get Vector's interface
 // branch hotfox
